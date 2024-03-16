@@ -1,9 +1,12 @@
 {
-  "name": "text-rgb",
+  "name": "@boenfu/text-rgb",
   "version": "0.1.0",
   "packageManager": "pnpm@8.14.0",
   "description": "Create rgb tuple from a string of text",
   "author": "boenfu",
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/boenfu/text-rgb#readme",
   "repository": {
     "type": "git",

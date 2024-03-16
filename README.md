@@ -2,13 +2,13 @@
 Create rgb tuple from a string of text
 ## Install
 ```shell
-npm install text-rgb
+npm install @beonfu/text-rgb
 ```
 
 ## Usage
 
 ```javascript
-import { rgb, rgbString, rgbaString } from 'text-rgb'
+import { rgb, rgbString, rgbaString } from '@beonfu/text-rgb'
 
 rgb('Hello World') // [133, 230, 177]
 
@@ -151,6 +151,10 @@ In addition to the functions of the function itself, I also want to share some i
     </tr>
   </tbody>
 </table>
+
+## PackageName
+Why use `@boenfu/text-rgb` instead of `text-rgb` ?
+> npm ERR! 403 403 Forbidden - PUT https://registry.npmjs.org/text-rgb - Package name too similar to existing package [textrgb](https://www.npmjs.com/package/textrgb); try renaming your package to '@boenfu/text-rgb' and publishing with 'npm publish --access=public' instead
 
 ## License
 MIT
