@@ -1,0 +1,61 @@
+{
+  "name": "text-rgb",
+  "version": "0.1.0",
+  "packageManager": "pnpm@8.14.0",
+  "description": "Create rgb tuple from a string of text",
+  "author": "boenfu",
+  "homepage": "https://github.com/boenfu/text-rgb#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boenfu/text-rgb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/boenfu/text-rgb/issues"
+  },
+  "keywords": [
+    "text2color",
+    "text-rgb",
+    "rgb"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.2",
+    "@antfu/ni": "^0.21.12",
+    "bumpp": "^9.2.1",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0",
+    "vitest": "^1.1.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
