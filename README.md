@@ -21,7 +21,7 @@ The principle is to divide the text into three parts, and then take the remainde
 So there is no randomness
 
 ```javascript
-rgb('Hello World') === rgb('Hello World') // true
+rgbString('Hello World') === rgbString('Hello World') // true
 ```
 
 ## Hello World RGB
